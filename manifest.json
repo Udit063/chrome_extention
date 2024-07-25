@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Custom New Tab by Udit",
+    "version": "1.0",
+    "description": "Change the default new tab to a custom web page within an iframe",
+    "chrome_url_overrides": {
+      "newtab": "index.html"
+    },
+    "permissions": [
+      "tabs"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  

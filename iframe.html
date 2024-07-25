@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <div class="block2">
+            <div class="birthday-container">
+                <h1>Upcoming Birthday!</h1>
+                <div class="birthday-card">
+                    <div class="birthday-message">
+                        <h2>John Doe</h2>
+                        <p>July 30, 2024</p>
+                        <p>Wishing you a day filled with love and cheer. May you be surrounded by all your loved ones.
+                            Happy Birthday!</p>
+                    </div>
+                </div>
+                <div class="birthday-card">
+                    <div class="birthday-message">
+                        <h2>Jane Smith</h2>
+                        <p>August 15, 2024</p>
+                        <p>May your birthday be the start of a year filled with good luck, good health, and much
+                            happiness. Happy Birthday!</p>
+                    </div>
+                </div>
+                <div class="birthday-card">
+                    <div class="birthday-message">
+                        <h2>Michael Johnson</h2>
+                        <p>September 10, 2024</p>
+                        <p>Hope your special day brings you all that your heart desires! Here's wishing you a day full
+                            of pleasant surprises. Happy Birthday!</p>
+                    </div>
+                </div>
+                <div class="birthday-card">
+                    <div class="birthday-message">
+                        <h2>John Doe</h2>
+                        <p>July 30, 2024</p>
+                        <p>Wishing you a day filled with love and cheer. May you be surrounded by all your loved ones.
+                            Happy Birthday!</p>
+                    </div>
+                </div>
+                <div class="birthday-card">
+                    <div class="birthday-message">
+                        <h2>Jane Smith</h2>
+                        <p>August 15, 2024</p>
+                        <p>May your birthday be the start of a year filled with good luck, good health, and much
+                            happiness. Happy Birthday!</p>
+                    </div>
+                </div>
+                <div class="birthday-card">
+                    <div class="birthday-message">
+                        <h2>Michael Johnson</h2>
+                        <p>September 10, 2024</p>
+                        <p>Hope your special day brings you all that your heart desires! Here's wishing you a day full
+                            of pleasant surprises. Happy Birthday!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="pomodoro-container">
+                    <h1>Pomodoro Timer</h1>
+                    <form id="timer-form">
+                        <div class="form-group">
+                            <label for="work-duration">Work Duration: (minutes)</label>
+                            <input type="number" id="work-duration" name="work-duration" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="break-duration">Break Duration: (minutes)</label>
+                            <input type="number" id="break-duration" name="break-duration" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="task">Task:</label>
+                            <input type="text" id="task" name="task" required>
+                        </div>
+                        <button type="submit" id="start-stop-btn">Start Timer</button>
+                    </form>
+                    <div id="timer-display">
+                        <h2 id="current-task">Task: None</h2>
+                        <h2 id="time">00:00</h2>
+                    </div>
+                    <audio id="alarm-sound" src="alarm.mp3" preload="auto"></audio>
+                </div>
+                <div class="slides">
+                    <iframe
+                        src="https://docs.google.com/presentation/d/e/2PACX-1vRwr53fleJsTZ5PRK1fVeZa7lRMKEYex7hS6K2g_gWvilNEaK2iAvC8sWUN6UijYyMatOtk0fdL1SBE/embed?start=true&loop=true&delayms=3000"
+                        frameborder="0" width="100%" height="300" allowfullscreen="true" mozallowfullscreen="true"
+                        webkitallowfullscreen="true"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="events-container">
+            <h1>UPCOMING EVENTS</h1>
+            <div class="event">
+                <div class="event-date">July 30, 2024</div>
+                <div class="event-details">
+                    <h2>Summer Tech Expo</h2>
+                    <p>Join us for the annual Summer Tech Expo where we showcase the latest in technology and
+                        innovation.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="event-date">August 15, 2024</div>
+                <div class="event-details">
+                    <h2>AI and Machine Learning Conference</h2>
+                    <p>Discover the latest advancements in AI and machine learning at our conference.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="event-date">September 10, 2024</div>
+                <div class="event-details">
+                    <h2>Startup Pitch Night</h2>
+                    <p>Watch budding entrepreneurs pitch their ideas to a panel of expert judges.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="column feedback">
+                <h2>Feedback Form</h2>
+                <form action="submit_feedback.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="feedback">Feedback:</label>
+                    <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+                    <button type="submit">Submit Feedback</button>
+                </form>
+            </div>
+
+            <div class="column todo">
+                <h2>To-Do List</h2>
+                <input type="text" id="new-task" placeholder="Add a new task">
+                <input type="submit" id="add-task" value="Add Task">
+                <ul id="task-list">
+                    <li>Complete project documentation <button onclick="removeTask(this)">Remove</button></li>
+                    <li>Conduct user testing <button onclick="removeTask(this)">Remove</button></li>
+                    <li>Schedule team meeting <button onclick="removeTask(this)">Remove</button></li>
+                    <li>Review codebase <button onclick="removeTask(this)">Remove</button></li>
+                </ul>
+            </div>
+
+            <div class="column issue-tracker">
+                <h2>Issue Tracker</h2>
+                <form id="issue-form">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" required>
+
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" rows="4" required></textarea>
+
+                    <button type="submit">Submit Issue</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="tracker-container">
+            <div class="section daily-checklist">
+                <h2>Daily Growth Checklist</h2>
+                <form id="checklist-form">
+                    <div class="check-item">
+                        <input type="checkbox" id="task1">
+                        <label for="task1">Complete daily exercise</label>
+                    </div>
+                    <div class="check-item">
+                        <input type="checkbox" id="task2">
+                        <label for="task2">Read a chapter of a book</label>
+                    </div>
+                    <div class="check-item">
+                        <input type="checkbox" id="task3">
+                        <label for="task3">Meditate for 10 minutes</label>
+                    </div>
+                    <div class="check-item">
+                        <input type="checkbox" id="task4">
+                        <label for="task4">Write in journal</label>
+                    </div>
+                    <div class="check-item">
+                        <input type="checkbox" id="task5">
+                        <label for="task5">Plan tomorrow's goals</label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="section steps-tracker">
+                <h2>Health/Steps Tracker</h2>
+                <canvas id="stepsChart"></canvas>
+            </div>
+        </div>
+
+        <div class="widget-container">
+            <div class="widget google-sheet">
+                <h2>Google Spreadsheet</h2>
+                <a href="https://sheets.google.com" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV5g21YGF2xd35v8Gy-t9m9eCcaA_zmxEUCw&s" alt="Google Sheets">
+                </a>
+            </div>
+    
+            <div class="widget google-calendar">
+                <h2>Google Calendar</h2>
+                <a href="https://calendar.google.com" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfZRzn2OpNq-OaU1QGcrCL9HDxi6k-4HXAyg&s" alt="Google Calendar">
+                </a>
+            </div>
+    
+            <div class="widget google-meet">
+                <h2>Google Meet</h2>
+                <a href="https://meet.google.com" target="_blank">
+                    <img src="https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v1/web-96dp/logo_meet_2020q4_color_2x_web_96dp.png" alt="Google Meet">
+                </a>
+            </div>
+    
+            <div class="widget google-keep">
+                <h2>Google Keep</h2>
+                <a href="https://keep.google.com" target="_blank">
+                    <img src="https://www.google.com/images/icons/product/keep-512.png" alt="Google Keep">
+                </a>
+            </div>
+        </div>
+        <div class="quotations">
+            <div class="quotes">
+                <h2>INSPIRATIONAL QUOTES</h2>
+            </div>
+            <div class="quotes-container" id="quotesContainer">
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="music-widget">
+                <h2>Music Player</h2>
+                <div class="music-container">
+                    <div id="musicPlayer">
+                        <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1E37uMIkwAXvUT" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="poll-widget">
+                <h2>Preferred Work Environment</h2>
+                <form id="pollForm">
+                    <label>
+                        <input type="radio" name="environment" value="Remote"> Remote
+                    </label>
+                    <label>
+                        <input type="radio" name="environment" value="On-site"> On-site
+                    </label>
+                    <label>
+                        <input type="radio" name="environment" value="Hybrid"> Hybrid
+                    </label>
+                    <button type="submit">Submit Preference</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
